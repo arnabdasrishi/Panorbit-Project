@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
 import "../index.css";
+import { Link } from "react-router-dom";
 
 const AccountList = () => {
   const [profData, setProfData] = useState([]);
 
   // Fetching data from the api
   const fetchData = () => {
-    fetch(`https://panorbit.in/api/users.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        setProfData(data.users);
-        // console.log(data);
-      });
+    try {
+      fetch(`https://panorbit.in/api/users.json`)
+        .then((res) => res.json())
+        .then((data) => {
+          setProfData(data.users);
+          // console.log(data);
+        });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -30,10 +35,15 @@ const AccountList = () => {
         {profData &&
           profData.map((items) => {
             return (
-              <div key={items.id} className="users__list">
-                <img src={items.profilepicture} alt="prof_imageXS" />
-                <p>{items.name}</p>
-              </div>
+              <Link
+                style={{ textDecoration: "none" }}
+                to={`/dashboard/users/${items.id}`}
+              >
+                <div key={items.id} className="users__list">
+                  <img src={items.profilepicture} alt="prof_imageXS" />
+                  <p>{items.name}</p>
+                </div>
+              </Link>
             );
           })}
       </div>

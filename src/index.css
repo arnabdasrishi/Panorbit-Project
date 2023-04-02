@@ -27,7 +27,9 @@ code {
   padding: 1.5rem 0;
   margin-top: 10rem;
 }
-
+.header__account__list > h3 {
+  padding-left: 1rem;
+}
 .all__users__list {
   height: 500px;
   overflow-y: scroll;
@@ -37,13 +39,20 @@ code {
 
 .users__list {
   border-bottom: 1px solid gray;
+  color: black;
   display: flex;
   gap: 1rem;
+  transition: transform 0.2s;
   align-items: center;
   margin: auto;
   padding-bottom: 0.3rem;
   padding-left: 1rem;
   background-color: white;
+}
+.users__list:hover {
+  transform: scale(1.05);
+  background-color: rgb(218, 255, 255);
+  border-bottom: none;
 }
 .users__list > p {
   font-size: 18px;
@@ -51,4 +60,92 @@ code {
 .users__list > img {
   width: 7%;
   border-radius: 50px;
+}
+
+/* Dashboard CSS begin hereby */
+.dashboard-main {
+  background-color: white;
+  display: flex;
+}
+
+.left__nav__flex {
+  background-color: rgb(107, 43, 226);
+  color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  padding-top: 15%;
+  margin: 3rem;
+}
+.left__nav__flex > h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  width: 15rem;
+  text-align: left;
+}
+
+.right__content__flex {
+  border: 2px solid red;
+  width: 90%;
+}
+.user__info__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.user__info__top > h3 {
+  color: rgb(107, 107, 107);
+}
+.user__img__name {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.user__img__name > img {
+  border-radius: 50px;
+}
+
+.user__details__left {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -2rem;
+}
+
+.main__content__dashboard {
+  border: 1px solid blue;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-right: 5rem;
+}
+.dashboard__content__left {
+  width: 50%;
+}
+.dashboard__content__left > img {
+  border-radius: 50%;
+}
+.dashboard__content__left > h3 {
+  font-size: 1.5rem;
+}
+.dashboard__content__right {
+  width: 50%;
+}
+.dashboard__content__right > iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 20rem;
+}
+
+.long__lat__mains {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+.long__lat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
