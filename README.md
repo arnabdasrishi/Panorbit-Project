@@ -57,7 +57,7 @@ Remember there are some limitations.
 
 ```http
   //Sample Data format.
-  //You can aspect this format of data when you pass a get request from the server
+  //You can expect this format of data when you pass a get request from the server
   
    "users": [
             {
@@ -74,7 +74,7 @@ Remember there are some limitations.
             "geo": {
             "lat": "-37.3159",
             "lng": "81.1496"
-            }
+                }
             },
             "phone": "1-770-736-8031 x56442",
             "website": "hildegard.org",
@@ -82,6 +82,7 @@ Remember there are some limitations.
             "name": "Romaguera-Crona",
             "catchPhrase": "Multi-layered client-server neural-net",
             "bs": "harness real-time e-markets"
+                }
             }
           ]
 ```
