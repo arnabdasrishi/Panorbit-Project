@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+## Languages and Dependencies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![1](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![2](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![3](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![4](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![5](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-## Available Scripts
 
-In the project directory, you can run:
+# Panorbit Dashborad Prototype
+[(CLICK HERE) DEPLOYED -> Netlify URL ](https://panorbit-protoptye-ads.netlify.app/)
 
-### `npm start`
+This is a prototype of a simple yet elegant design of users-list landing page and then a user dashborad which consist of all the details of the particular user. This is a project work for Panorbit and still in development phase.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running the Appliction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app was made with the help of React/npm CRA (create React application)
+- Clone this repo or download the zip and extract the file or fork it.
+- After clonning run the following commands on your zsh or node
+    - To install all the dependencies run : ` npm install` or `npm i`
+    - Post that run `npm start` or `npm run start`
+    - or directly you can visit the deployed netlify site `https://panorbit-protoptye-ads. netlify.app/`
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend:** HTML, CSS, React.js, APIs, JSON
 
-### `npm run build`
+**Server:** API endpoint is already hoisted. You can check the fetch function inside the code to get the api/apis links.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data are not saved in Local Storage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `npm run eject`
+- [Arnab Das](https://github.com/arnabdasrishi)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Reference
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Get all items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The API Auth Mocker is commented out in (assorted-desk-4504/script/signup_login.js)
 
-## Learn More
+To use the system just remove the comments. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Remember there are some limitations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```http
+  POST URL- https://panorbit.in/api/users.json
+```
 
-### Code Splitting
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `token` | `string` | **Not Required** |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Get item Format
 
-### Analyzing the Bundle Size
+```http
+  //Sample Data format.
+  //You can aspect this format of data when you pass a get request from the server
+  
+   "users": [
+            {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "profilepicture": "https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1001.jpeg",
+            "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+            }
+            },
+            "phone": "1-770-736-8031 x56442",
+            "website": "hildegard.org",
+            "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+            }
+          ]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## CSS and UI
 
-### Making a Progressive Web App
+No external libraries and used to make this project till now. However further more it may be used for improve the user interface.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Responsiveness work is in progress. For now at the alpha release stage it is not responsive.
 
-### Advanced Configuration
+# Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have any feedback, please reach out to arnabdasrishi@gmail.com
 
-### Deployment
+### 🙂 Thank You and have a nice day 🙏
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
