@@ -31,7 +31,7 @@ const Post = () => {
   return (
     <div className="right__content__flex">
       <div className="user__info__top">
-        <h3>Profile</h3>
+        <h3>Posts</h3>
         <div className="user__img__name">
           <img
             src={userData[params.id - 1].profilepicture}

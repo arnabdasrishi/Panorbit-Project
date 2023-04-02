@@ -86,11 +86,11 @@ code {
   text-align: left;
   padding-bottom: 1rem;
 }
-.left__nav__flex > *:first-child {
+.left__nav__flex > p:first-child {
   font-size: 1.5rem;
   color: white;
   border-bottom: 1px solid white;
-  padding-right: 9.5rem;
+  /* font-weight: 400; */
 }
 .left__nav__flex > *:hover {
   font-weight: 500;
@@ -196,4 +196,9 @@ code {
   font-size: 3rem;
   text-align: center;
   margin-top: 15rem;
+}
+
+/* Navlink active class */
+.active {
+  font-weight: bold;
 }

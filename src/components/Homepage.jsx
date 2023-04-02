@@ -5,7 +5,7 @@ import Profile from "./Profile";
 import Post from "./Post";
 import Gallery from "./Gallery";
 import Todo from "./Todo";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
   const [userData, setUserData] = useState([]);
@@ -41,37 +41,40 @@ const Homepage = () => {
   return (
     <div className="dashboard-main">
       <div className="left__nav__flex">
-        <Link
-          to={`/dashboard/user/${id}`}
-          style={{
-            textDecoration: "none",
-          }}
-        >
-          Profile
-        </Link>
         <p>
-          <Link
+          <NavLink
+            to={`/dashboard/user/${id}`}
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
+          >
+            Profile
+          </NavLink>
+        </p>
+        <p>
+          <NavLink
             style={{ textDecoration: "none", color: "white" }}
             to={`/dashboard/user/${id}/post`}
           >
             Post
-          </Link>
+          </NavLink>
         </p>
         <p>
-          <Link
+          <NavLink
             style={{ textDecoration: "none", color: "white" }}
             to={`/dashboard/user/${id}/gallery`}
           >
             Gallery
-          </Link>
+          </NavLink>
         </p>
         <p>
-          <Link
+          <NavLink
             style={{ textDecoration: "none", color: "white" }}
             to={`/dashboard/user/${id}/todo`}
           >
             Todo
-          </Link>
+          </NavLink>
         </p>
       </div>
 
