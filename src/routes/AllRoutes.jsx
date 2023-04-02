@@ -5,6 +5,8 @@ import Homepage from "../components/Homepage";
 
 const AllRoutes = () => {
   return (
+
+    // ID is passed as params (:id)
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/dashboard/user/:id" element={<Homepage />} />

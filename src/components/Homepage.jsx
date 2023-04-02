@@ -8,8 +8,11 @@ import Todo from "./Todo";
 import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
+  // Here all the data are fetched and stored and accessed later
   const [userData, setUserData] = useState([]);
-  const { id, subpath } = useParams();
+  const { id, subpath } = useParams(); // destructured id and subpath from parameters
+
+  // Onclick renders are stored in this objects
 
   const renderers = {
     post: <Post />,
@@ -17,6 +20,7 @@ const Homepage = () => {
     todo: <Todo />,
   };
 
+  // Fetch data function
   async function fetchData() {
     try {
       await fetch(`https://panorbit.in/api/users.json`)
@@ -78,6 +82,7 @@ const Homepage = () => {
         </p>
       </div>
 
+      {/* If subpath is not available then profile is rendered else that object element from renderers are rendered*/}
       {subpath !== undefined ? renderers[subpath] : <Profile />}
     </div>
   );

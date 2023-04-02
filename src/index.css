@@ -66,6 +66,7 @@ code {
 .dashboard-main {
   background-color: white;
   display: flex;
+  gap: 1rem;
 }
 
 .left__nav__flex {
