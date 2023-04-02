@@ -91,6 +91,10 @@ Remember there are some limitations.
 
 No external libraries and used to make this project till now. However further more it may be used for improve the user interface.
 
+All the class names and id used in this projects are in BEM convention.
+
+Information about the functions and its uses including JSX elements information are provided in the codebase itself to get a clearer understanding
+
 Responsiveness work is in progress. For now at the alpha release stage it is not responsive.
 
 # Feedback
