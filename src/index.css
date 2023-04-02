@@ -73,25 +73,36 @@ code {
   color: white;
   border-radius: 20px;
   padding: 2rem;
-  padding-top: 15%;
+  padding-top: 13%;
   margin: 3rem;
+  margin-top: 5rem;
 }
-.left__nav__flex > h3 {
+.left__nav__flex > p {
   font-size: 1.5rem;
   border-bottom: 1px solid white;
-  width: 15rem;
+  transition: transform 0.2s;
+  width: 14rem;
   text-align: left;
+  padding-bottom: 1rem;
 }
-
+.left__nav__flex > p:first-child{
+  font-weight: 700;
+}
+.left__nav__flex > p:hover {
+  font-weight: 500;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 .right__content__flex {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 90%;
 }
 .user__info__top {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.4rem;
+  border-bottom: 1px solid gray;
 }
 .user__info__top > h3 {
   color: rgb(107, 107, 107);
@@ -107,18 +118,26 @@ code {
 }
 
 .user__details__left {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: -2rem;
 }
+.user__details__left{
+  color: gray;
+  font-size: 1.1rem;
+}
+.user__details__left > h3{
+  color: black;
+}
 
 .main__content__dashboard {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   gap: 3rem;
   align-items: center;
+  padding-top: 2rem;
   padding-right: 5rem;
 }
 .dashboard__content__left {
@@ -139,6 +158,15 @@ code {
   height: 20rem;
 }
 
+.company__deets{
+  font-size: 1.7rem;
+  color: gray;
+  border-top: 1px solid gray;
+  margin-bottom: 2rem;
+  width: 80%;
+  text-align: center;
+}
+
 .long__lat__mains {
   display: flex;
   gap: 1rem;
@@ -148,4 +176,14 @@ code {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+
+.vir_line {
+  border-left: 1px solid gray;
+  height: 600px;
+  position: absolute;
+  left: 57%;
+  margin-left: -3px;
+  top: 30%;
 }

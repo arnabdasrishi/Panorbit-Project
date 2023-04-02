@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../index.css";
 import { useParams } from "react-router-dom";
 
-const Dashboard = () => {
+const Homepage = () => {
   const [userData, setUserData] = useState([]);
   const params = useParams();
 
@@ -30,10 +30,10 @@ const Dashboard = () => {
   return (
     <div className="dashboard-main">
       <div className="left__nav__flex">
-        <h3>Profile</h3>
-        <h3>Post</h3>
-        <h3>Gallery</h3>
-        <h3>ToDo</h3>
+        <p>Profile</p>
+        <p>Post</p>
+        <p>Gallery</p>
+        <p>ToDo</p>
       </div>
 
       <div className="right__content__flex">
@@ -69,7 +69,7 @@ const Dashboard = () => {
             <p className="user__details__left">
               Website: <h3>{userData[params.id - 1].website}</h3>
             </p>
-            <p>Company</p>
+            <p className="company__deets">Company</p>
             <p className="user__details__left">
               Name: <h3>{userData[params.id - 1].company.name}</h3>
             </p>
@@ -97,8 +97,12 @@ const Dashboard = () => {
               Zipcode: <h3>{userData[params.id - 1].address.zipcode}</h3>
             </p>
             <iframe
-            title="gmaps"
-              src="https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="gmaps"
+              src={`https://maps.google.com/maps?q=loc:${
+                userData[params.id - 1].address.geo.lat
+              },${
+                userData[params.id - 1].address.geo.lng
+              }&t=&z=13&ie=UTF8&iwloc=&output=embed`}
               frameBorder="0"
             ></iframe>
 
@@ -113,8 +117,11 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Horizontal & Virtual Lines */}
+      <div className="vir_line"></div>
     </div>
   );
 };
 
-export default Dashboard;
+export default Homepage;

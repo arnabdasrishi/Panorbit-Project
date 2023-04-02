@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "../components/LandingPage";
-import Dashboard from "../components/Dashboard";
+import Homepage from "../components/Homepage";
 
 const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />}/>
-      <Route path="/dashboard/users/:id" element={<Dashboard />}/>
+      <Route path="/dashboard/user/:id" element={<Homepage />}/>
     </Routes>
   );
 };

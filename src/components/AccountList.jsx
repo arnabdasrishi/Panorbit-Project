@@ -37,7 +37,7 @@ const AccountList = () => {
             return (
               <Link
                 style={{ textDecoration: "none" }}
-                to={`/dashboard/users/${items.id}`}
+                to={`/dashboard/user/${items.id}`}
               >
                 <div key={items.id} className="users__list">
                   <img src={items.profilepicture} alt="prof_imageXS" />
