@@ -19,7 +19,7 @@ This app was made with the help of React/npm CRA (create React application)
 - After clonning run the following commands on your zsh or node
     - To install all the dependencies run : ` npm install` or `npm i`
     - Post that run `npm start` or `npm run start`
-    - or directly you can visit the deployed netlify site `https://panorbit-protoptye-ads. netlify.app/`
+    - or directly you can visit the deployed netlify site `https://panorbit-protoptye-ads.netlify.app/`
 
 ## Tech Stack
 
