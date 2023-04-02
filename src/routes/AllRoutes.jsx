@@ -6,8 +6,9 @@ import Homepage from "../components/Homepage";
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />}/>
-      <Route path="/dashboard/user/:id" element={<Homepage />}/>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/dashboard/user/:id" element={<Homepage />} />
+      <Route path="/dashboard/user/:id/:subpath" element={<Homepage />} />
     </Routes>
   );
 };

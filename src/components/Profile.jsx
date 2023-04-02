@@ -107,6 +107,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      {/* Horizontal & Virtual Lines */}
+      <div className="vir_line"></div>
     </div>
   );
 };

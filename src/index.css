@@ -76,6 +76,7 @@ code {
   padding-top: 13%;
   margin: 3rem;
   margin-top: 5rem;
+  height: 500px;
 }
 .left__nav__flex > p {
   font-size: 1.5rem;
@@ -85,10 +86,13 @@ code {
   text-align: left;
   padding-bottom: 1rem;
 }
-.left__nav__flex > p:first-child{
-  font-weight: 700;
+.left__nav__flex > *:first-child {
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-right: 9.5rem;
 }
-.left__nav__flex > p:hover {
+.left__nav__flex > *:hover {
   font-weight: 500;
   transform: scale(1.1);
   cursor: pointer;
@@ -124,11 +128,11 @@ code {
   gap: 1rem;
   margin-top: -2rem;
 }
-.user__details__left{
+.user__details__left {
   color: gray;
   font-size: 1.1rem;
 }
-.user__details__left > h3{
+.user__details__left > h3 {
   color: black;
 }
 
@@ -158,7 +162,7 @@ code {
   height: 20rem;
 }
 
-.company__deets{
+.company__deets {
   font-size: 1.7rem;
   color: gray;
   border-top: 1px solid gray;
@@ -178,7 +182,6 @@ code {
   gap: 0.5rem;
 }
 
-
 .vir_line {
   border-left: 1px solid gray;
   height: 600px;
@@ -186,4 +189,11 @@ code {
   left: 57%;
   margin-left: -3px;
   top: 30%;
+}
+
+.comming__soon {
+  color: rgb(216, 216, 216);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 15rem;
 }
