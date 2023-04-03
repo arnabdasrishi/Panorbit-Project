@@ -203,3 +203,80 @@ code {
 .active {
   font-weight: bold;
 }
+
+/* Chat box css */
+
+.chatbox__main {
+  position: relative;
+  background-color: rgb(107, 43, 226);
+  width: 12%;
+  color: white;
+  left: 81%;
+  padding: 0.2rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.chatobx__main__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Activated Chat box link */
+.chatlist {
+  height: 400px;
+  overflow-y: scroll;
+}
+.chat__user__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  left: 82%;
+  width: 17%;
+  padding-bottom: 1rem;
+}
+.chat__user__list > img {
+  width: 70%;
+  border-radius: 50px;
+}
+
+.chats__section {
+  display: flex;
+}
+
+.chatbox__chats {
+  position: relative;
+  left: 65%;
+  width: 29%;
+  top: 7rem;
+}
+.chatobx__chat__text {
+  background-color: rgb(107, 43, 226);
+  color: white;
+  border-radius: 10px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatobx__chat__text > img {
+  width: 40px;
+  border-radius: 50px;
+}
+.user__chats {
+  height: 230px;
+  padding-left: 1rem;
+  overflow-y: scroll;
+}
+.user__chats > p {
+  background-color: rgb(241, 241, 241);
+  padding:0.2rem 1rem;
+}

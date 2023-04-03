@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../index.css";
+import "../../index.css";
 import { useParams } from "react-router-dom";
 
 const Profile = () => {
