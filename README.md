@@ -7,7 +7,7 @@
 ![5](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 
-# Panorbit Dashborad Prototype
+# Panorbit Dashboard Prototype
 [(CLICK HERE) DEPLOYED -> Netlify URL ](https://panorbit-protoptye-ads.netlify.app/)
 
 This is a prototype of a simple yet elegant design of users-list landing page and then a user dashborad which consist of all the details of the particular user. This is a project work for Panorbit and still in development phase.
